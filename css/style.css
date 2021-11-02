@@ -1,3 +1,8 @@
+:root {
+  --accent-main-color: #651d32;
+  --accent-secondary-color: #e2d5d9;
+  --accent-text-color: #707070;
+}
 * {
   margin: 0;
   padding: 0;
@@ -6,11 +11,36 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   font-family: "Lato", sans-serif;
+  font-size: 20px;
 }
+h1 {
+  font-size: 82px;
+}
+.justify {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.content {
+  max-width: 1570px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 nav {
   display: flex;
-  background-color: blanchedalmond;
+  justify-content: space-between;
 }
+/* make sure the width of the logo placeholder always the same with the logo */
+.logo-placeholder,
+.logo img {
+  width: 361px;
+}
+.logo {
+  position: absolute;
+  left: 40px;
+}
+
 .navbar {
   list-style-type: none;
   margin: 0;
@@ -24,12 +54,43 @@ nav {
 
 .navbar li a {
   display: block;
-  color: black;
+  color: var(--accent-text-color);
   text-align: center;
-  padding: 14px 16px;
+  padding: 40px 30px;
   text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
 }
 
 .navbar li a:hover {
-  background-color: aqua;
+  background-color: var(--accent-main-color);
+  color: white;
+}
+
+.button-style {
+  position: relative;
+  background-color: var(--accent-main-color);
+  color: white !important;
+  border-radius: 40px;
+  padding: 10px 20px !important;
+}
+
+.button-style:hover {
+  background-color: var(--accent-secondary-color) !important;
+  color: var(--accent-text-color) !important;
+  box-shadow: 0px 0px 0px 2px var(--accent-text-color) inset;
+}
+
+.navbar li .button-style {
+  margin: 30px 20px !important;
+}
+
+.hero-main-bg {
+  height: 678px;
+}
+
+.hero-main-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
