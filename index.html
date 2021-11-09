@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="images/msfp-icon.png" type="image/x-icon" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsiveNavbar.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -22,7 +23,12 @@
                 <img src="images/logo.png" alt="Logo of Moline Public School Foundation with the maroon color" />
             </a>
             <div class="logo-placeholder"></div>
-            <ul class="navbar">
+            <div class="burger navbar-toggle" id="js-navbar-toggle">
+                <div class="l1"></div>
+                <div class="l2"></div>
+                <div class="l3"></div>
+            </div>
+            <ul class="navbar" id="menu">
                 <li><a href="/">Home</a></li>
                 <li><a href="/">About</a></li>
                 <li><a href="/">News & Events</a></li>
@@ -30,12 +36,13 @@
                 <li><a href="/" class="button-style">Donate</a></li>
             </ul>
         </nav>
+        <div class="placeholder-nav"></div>
         <div class="hero-main-bg">
             <img class="gallery-img" src="images/smiling-students.jpg" alt="a student looking and smiling at you."
                 srcset="" />
             <div class="empty-bg"></div>
             <div class="justify content tilte-quote">
-                <h1>Supporting students in the Moline-Coal Valley School District</h1>
+                <h1 id="typewriter">Supporting students in the Moline-Coal Valley School District</h1>
             </div>
         </div>
     </header>
@@ -146,17 +153,20 @@
                 </ul>
             </div>
             <div class="footer-logo">
+                <div class="social-media">
+                    <a href="/"><img src="./images/icons/iconmonstr-email-10.svg" alt="email icon" srcset=""></a>
+                    <a href="/"><img src="./images/icons/iconmonstr-facebook-4.svg" alt="email icon" srcset=""></a>
+                </div>
                 <img src="images/logo.png" alt="Moline Public School Foundation logo" srcset="">
 
             </div>
         </div>
-        <p class="justify content" align="right" style="padding-bottom: 20px; padding-top: 20px;">Copyright Moline
-            Public Schools
-            Foundation | Site
-            by Augustana
-            Web Guild</p>
-
+        <p class="justify content" align="right" style="padding-bottom: 20px; padding-top: 20px;">
+            Copyright Moline Public Schools Foundation |
+            Site by <a href="/">Augustana Web Guild</a></p>
     </footer>
+    <script src="js/typewriter.js"></script>
+    <script src="js/responsiveNavbar.js"></script>
 </body>
 
 </html>
